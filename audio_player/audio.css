@@ -1,0 +1,134 @@
+
+body {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.audio_player {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	padding:10px;
+	width: 650px;
+	background: #1a1a1a;
+	border-radius: 18px;
+}
+
+.img_and_songs_wrapper {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+.img_holder {
+	width: 300px;
+	height: 370px;
+	border: 1px solid black;
+	margin: 5px;
+	background: white;
+}
+
+.songs_holder {
+	width: 300px;
+	height: 370px;
+	border: 1px solid black;
+	margin: 5px;
+	background: white;
+	overflow: scroll;
+}
+
+.songs_holder p {
+	margin-left: 10px;
+}
+
+.button_holder {
+	display: flex;
+	justify-content: space-around;
+	width: 620px;
+	margin: 10px 0 19px 19px;
+}
+
+.button {
+	width: 70px;
+	height: 22px;
+	border: 1px solid black;
+	border-radius: 50px;
+	margin-right: 20px;
+	background: lightgray;
+}
+
+.play_sign_holder {
+	transform: rotate(90deg);
+	margin-top: -2px;
+	margin-left: 2px;
+}
+
+.play_sign {
+	font-size: 20px;
+}
+
+.stop_sign {
+	height: 10px;
+	width: 10px;
+	border: 2px solid black;
+	margin: auto auto;
+}
+
+.mute {
+	width: 70px;
+}
+
+.button_txt_play {
+	margin-left: -4px;
+}
+
+.button_txt_stop {
+	margin-top: 7px;
+    margin-left: -3px;
+}
+
+.button_txt_pause {
+	margin-top: 7px;
+    margin-left: -8px;
+}
+
+.active {
+    background: #cecece;
+    text-decoration: none;
+}
+
+.button:focus {
+    background: lightgreen;
+}
+
+.pause:focus {
+    background: yellow;
+}
+
+.stop:focus {
+    background: #ff4d4d;
+}
+
+.mute:focus {
+    background: darkorange;
+}
+
+.sound_icon_holder {
+	width: 40px;
+	height: 40px;
+}
+
+.sound_icon {
+	width: 75%;
+	height: auto;
+	background: lightgray;
+	padding: 2px;
+	border-radius: 50px;
+}
+
+
+
