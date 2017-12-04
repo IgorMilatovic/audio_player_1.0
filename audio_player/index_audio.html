@@ -11,39 +11,42 @@
 </head>
 <body>
     
-<div class="audio_player">
-	<div class="img_and_songs_wrapper">
-		<div class="img_holder">
-			
+	<div class="audio_player">
+		<div class="red_border">
+			<div class="img_and_songs_wrapper">
+				<div class="img_holder">
+					
+				</div>
+				<div class="songs_holder">
+					
+				</div>
+			</div>
+			<div class="button_holder">
+				<button id="play" class="button play button_focus">
+					<div class="play_sign_holder">
+						<span class="play_sign">&#916;</span>
+					</div>
+				</button>
+				<button class="button pause button_focus">
+					<div>||</div>
+				</button> 
+				<button class="button stop button_focus">
+					<div class="stop_sign"></div>
+				</button>
+				<button id="next" class="button next">
+					<div class="next_sign_holder">
+						<span class="next_sign">&gt;</span>
+					</div>
+				</button>
+				<button id="prev" class="button prev">
+					<div class="prev_sign_holder">
+						<span class="prev_sign">&lt;</span>
+					</div>
+				</button>
+				<button class="button mute">mute</button>  
+				<div class="sound_icon_holder"><img class="sound_icon" src="" alt=""></div><input class="volume_slider" type="range" min="0" max="10" value="100" step="1">
+			</div>
 		</div>
-		<div class="songs_holder">
-			
-		</div>
-	</div>
-	<div class="button_holder">
-		<button id="play" class="button play">
-			<div class="play_sign_holder">
-				<span class="play_sign">&#916;</span>
-			</div>
-		</button>
-		<button class="button pause">
-			<div>||</div>
-		</button> 
-		<button class="button stop">
-			<div class="stop_sign"></div>
-		</button>
-		<button id="next" class="button next">
-			<div class="next_sign_holder">
-				<span class="next_sign">&gt;</span>
-			</div>
-		</button>
-		<button id="prev" class="button prev">
-			<div class="prev_sign_holder">
-				<span class="prev_sign">&lt;</span>
-			</div>
-		</button>
-		<button class="button mute">mute</button>  
-		<div class="sound_icon_holder"><img class="sound_icon" src="" alt=""></div><input class="volume_slider" type="range" min="0" max="10" value="100" step="1">
 	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
 	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

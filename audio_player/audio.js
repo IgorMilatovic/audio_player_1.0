@@ -71,17 +71,22 @@ const zvuk = new Audio();
 
 var n = 0;
 
+var songDivClass = '.pusti_pesmu' + n;
+
+var songColored = $(songDivClass);
+
+// zvuk.addEventListener('play', function() {
+	
+// 	songColored.classList.add('boja_pesme');
+// });
 
 function pustiPesmu() {
 
-	if (zvuk.currentTime == 0) {
-    
-    	zvuk.src = songsSrc[n];
+	zvuk.src = songsSrc[n];
 			
-		zvuk.play();
-	}
-	
-	else if (zvuk.paused) {
+	zvuk.play();
+
+	if (zvuk.paused) {
 		
 		zvuk.currentTime
 
@@ -130,6 +135,8 @@ function pustiSledecuPesmu() {
 		n = 0
 
 		pustiPesmu()
+
+		playSong.focus();
 	}
 
 	else {
@@ -137,12 +144,9 @@ function pustiSledecuPesmu() {
 		n = n + 1
 
 		pustiPesmu()
-	}
-	
-	playSong.focus();
-	
-	playNext.style.background = 'lightgray';
 
+		playSong.focus();
+	}
 };
 
 function pustiPrethodnuPesmu() {
@@ -160,11 +164,10 @@ function pustiPrethodnuPesmu() {
 		n = n - 1;
 
 		pustiPesmu()
+
+		playSong.focus();
 	}
 
-	playSong.focus();;
-	
-	playPrev.style.background = 'lightgray';
 };
 
 function mute() {
@@ -209,9 +212,31 @@ pauseSong.addEventListener('click', pauzirajPesmu);
 	
 stopSong.addEventListener('click', zaustaviPesmu); 
 
-playNext.addEventListener('click', pustiSledecuPesmu); 
+playNext.addEventListener('click', pustiSledecuPesmu);
+
+playNext.addEventListener('mouseover', function () {
+
+	playNext.addEventListener('mousedown', function() {
+		playNext.classList.add('prev_next')
+	})
+
+	playNext.addEventListener('mouseup', function() {
+		playNext.classList.remove('prev_next')
+	})
+});
 
 playPrev.addEventListener('click', pustiPrethodnuPesmu);
+
+playPrev.addEventListener('mouseover', function () {
+
+	playPrev.addEventListener('mousedown', function() {
+		playPrev.classList.add('prev_next')
+	})
+
+	playPrev.addEventListener('mouseup', function() {
+		playPrev.classList.remove('prev_next')
+	})
+});
 
 muteButton.addEventListener('click', mute);
 

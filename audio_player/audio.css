@@ -16,6 +16,14 @@ a {
 	width: 650px;
 	background: #1a1a1a;
 	border-radius: 18px;
+	padding: 7px;
+}
+
+.red_border {
+	border: 1px solid red;
+	border-radius: 12px;
+	padding: 10px;
+	box-shadow: 0 0 4px 3px red;
 }
 
 .img_and_songs_wrapper {
@@ -29,7 +37,7 @@ a {
 	height: 370px;
 	border: 1px solid black;
 	margin: 5px;
-	background: white;
+	background: #e6e6e6;
 }
 
 .songs_holder {
@@ -37,7 +45,7 @@ a {
 	height: 370px;
 	border: 1px solid black;
 	margin: 5px;
-	background: white;
+	background: #e6e6e6;
 	overflow: scroll;
 }
 
@@ -96,12 +104,7 @@ a {
     margin-left: -8px;
 }
 
-.active {
-    background: #cecece;
-    text-decoration: none;
-}
-
-.button:focus {
+.button_focus:focus {
     background: lightgreen;
 }
 
@@ -117,6 +120,10 @@ a {
     background: darkorange;
 }
 
+.prev_next {
+	background: darkorange;
+}
+
 .sound_icon_holder {
 	width: 40px;
 	height: 40px;
@@ -130,5 +137,7 @@ a {
 	border-radius: 50px;
 }
 
-
+.boja_pesme {
+	background: lightgreen;
+}
 
